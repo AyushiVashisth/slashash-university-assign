@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Universities</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Universities</h1>
+        <form id="searchForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">University Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter university name">
+            </div>
+            <div class="mb-3">
+                <label for="country" class="form-label">Country:</label>
+                <input type="text" class="form-control" id="country" name="country" placeholder="Enter country">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Country</th>
+                    <th>Web Page</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="universityList">
+                <!-- Universities will be populated here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
